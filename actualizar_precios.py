@@ -56,6 +56,7 @@ def main():
         codificacion = respuesta.headers.get_content_charset() or 'utf-8'
         print(f'HTTP {respuesta.status}; URL final: {respuesta.url}; bytes: {len(contenido)}; tipo: {tipo}')
     html = contenido.decode(codificacion, errors='replace')
+    print("RESPUESTA DEL SERVIDOR:", repr(html[:500]))
     lector = Lector()
     lector.feed(html)
     nuevos = {}
