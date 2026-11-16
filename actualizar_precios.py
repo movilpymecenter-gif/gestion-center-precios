@@ -7,7 +7,7 @@ from html.parser import HTMLParser
 from pathlib import Path
 from urllib.request import Request, urlopen
 
-ORIGEN = 'https://www.gestioncentercloud.com.ar/'
+ORIGEN = 'https://www.gestioncentercloud.com.ar/login.aspx'
 ARCHIVO = Path(__file__).resolve().parent / 'precios.json'
 IDS = {'cloud_lite': 'lblPlanCloudLite', 'cloud_pro': 'lblPlanCloudPro', 'cloud_premium': 'lblPlanCloudPremium', 'usuario_adicional': 'lblUserAdicLite'}
 
